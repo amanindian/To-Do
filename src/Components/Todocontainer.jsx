@@ -8,7 +8,7 @@ const Todocontainer = () => {
   return (
     <div className="alltodo-items">
       {allToDoData.map((item, index) => {
-        return <Singletodo item={item} key={index} />;
+        return <Singletodo item={item} index={index} key={index} />;
       })}
     </div>
   );
